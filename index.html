@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>J Code's — Coming Soon</title>
+    <title>J Code's — The AI-First IDE</title>
     <meta
       name="description"
-      content="J Code's is an AI-powered IDE built for developers. Coming soon with AI-first workflows, multi-model support, and VS Code compatibility."
+      content="J Code's is an open-source, AI-native IDE built on VS Code. Multi-model AI support, inline autocomplete, autonomous agentic coding, and full workspace context."
     />
-    <meta property="og:title" content="J Code's — Coming Soon" />
+    <meta property="og:title" content="J Code's — The AI-First IDE" />
     <meta
       property="og:description"
-      content="The next-generation AI-first IDE built for developers."
+      content="Open-source, AI-native development environment with multi-model support, agentic coding, and deep workspace context."
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="J Code's — Coming Soon" />
+    <meta name="twitter:title" content="J Code's — The AI-First IDE" />
     <meta
       name="twitter:description"
-      content="AI-powered IDE for developers. Coming soon."
+      content="Open-source, AI-native IDE built on VS Code. Multi-model AI support and agentic coding."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -36,24 +36,40 @@
     <header class="site-header" id="top">
       <nav class="navbar container" aria-label="Primary navigation">
         <a href="#top" class="brand" aria-label="J Code's home">
-          <span class="brand-logo brand-logo-fallback" aria-hidden="true">J_</span>
+          <span class="brand-logo brand-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M64 16 V57 C64 72.9 51.7 84 38 84 C28.6 84 20.8 79.3 15 71.5"
+                stroke="currentColor"
+                stroke-width="18"
+                stroke-linecap="round"
+              />
+              <rect x="54" y="76" width="28" height="12" rx="2" fill="currentColor" />
+            </svg>
+          </span>
           <span class="brand-name">J Code's</span>
         </a>
 
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#platforms">Downloads</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
         <div class="nav-actions">
           <a
-            href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases"
+            href="https://github.com/jagantripuragiri/Jcodes-AI-Ide"
             target="_blank"
             rel="noreferrer"
             class="button button-ghost"
-            >GitHub Releases</a
+            >GitHub</a
           >
           <a
             href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases/latest"
             target="_blank"
             rel="noreferrer"
             class="button button-primary"
-            >Download Latest</a
+            >Download</a
           >
         </div>
       </nav>
@@ -62,15 +78,14 @@
     <main id="main-content">
       <section class="hero">
         <div class="container hero-shell reveal in-view">
-          <div class="hero-badge mono">COMING SOON</div>
-
+          <span class="hero-badge">Open source · Built on VS Code 1.99</span>
           <p class="hero-kicker mono">AI-powered IDE</p>
-          <h1>Built for developers who want an AI-first workflow.</h1>
+          <h1>Smarter coding, without the extra weight.</h1>
 
           <p class="hero-copy">
-            J Code's combines workspace-aware assistance, intelligent
-            autocomplete, and multi-model support in a focused development
-            environment.
+            J Code's is an open-source, AI-native development environment with deep
+            workspace context, inline autocomplete, agentic coding workflows, and
+            multi-model support &mdash; all inside an editor you already know.
           </p>
 
           <div class="hero-actions">
@@ -84,12 +99,12 @@
               <span aria-hidden="true">→</span>
             </a>
             <a
-              href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases"
+              href="https://github.com/jagantripuragiri/Jcodes-AI-Ide"
               target="_blank"
               rel="noreferrer"
               class="button button-ghost button-lg"
             >
-              View Releases
+              View on GitHub
             </a>
           </div>
 
@@ -97,7 +112,7 @@
             <li>Built on VS Code 1.99</li>
             <li>Multi-model AI support</li>
             <li>macOS, Windows, Linux</li>
-            <li>Open source</li>
+            <li>MIT licensed</li>
           </ul>
 
           <div class="minimal-panel">
@@ -136,9 +151,216 @@
               </div>
               <div class="info-line">
                 <span class="info-key">Status</span>
-                <span class="info-value accent mono">coming soon</span>
+                <span class="info-value accent mono">actively developed</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="models-strip reveal">
+        <div class="container">
+          <p class="section-eyebrow center">Bring your own model</p>
+          <ul class="models-row" aria-label="Supported AI providers">
+            <li>Anthropic Claude</li>
+            <li>OpenAI GPT-4o / o1 / o3</li>
+            <li>Google Gemini</li>
+            <li>DeepSeek</li>
+            <li>Groq</li>
+            <li>Local Ollama</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <p class="section-eyebrow">Core features</p>
+          <h2 class="section-title">Everything you need to ship faster</h2>
+          <p class="section-copy">
+            J Code's layers AI-native tooling directly on top of VS Code, so nothing
+            about your workflow has to change.
+          </p>
+
+          <div class="features-grid">
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">🧠</span>
+              <h3>Multi-Model AI Support</h3>
+              <p>
+                Seamlessly connect and switch between Anthropic Claude, Google Gemini,
+                OpenAI GPT-4o / o1 / o3, DeepSeek, Groq, and local Ollama models.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">⚡️</span>
+              <h3>AI Inline Autocomplete &amp; Edit</h3>
+              <p>
+                Instant multi-line completions and smart editing directly inside your
+                editor buffer, tuned to your codebase.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">🤖</span>
+              <h3>Autonomous Agentic Coding</h3>
+              <p>
+                Let the IDE execute multi-step coding tasks, inspect errors, search
+                workspaces, and apply diffs autonomously.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">🔍</span>
+              <h3>Project Brain &amp; Workspace Context</h3>
+              <p>
+                Indexes your entire codebase for semantic search, architecture-aware
+                completions, and project-level reasoning.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">🔌</span>
+              <h3>Model Context Protocol Support</h3>
+              <p>
+                Connect external tools, databases, and APIs to give the AI direct
+                access to your real workflows.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">🛡</span>
+              <h3>Built on VS Code</h3>
+              <p>
+                Full compatibility with VS Code keybindings, settings, syntax
+                highlighting, and your existing extensions.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="platforms">
+        <div class="container">
+          <p class="section-eyebrow">Downloads</p>
+          <h2 class="section-title">Available on every major platform</h2>
+          <p class="section-copy">
+            Grab the latest build for your OS. All releases are published on GitHub.
+          </p>
+
+          <div class="platforms-grid">
+            <article class="platform-card reveal">
+              <span class="platform-icon" aria-hidden="true">🍏</span>
+              <h3>macOS</h3>
+              <p class="platform-meta">Apple Silicon &middot; M1 / M2 / M3 / M4</p>
+              <a
+                class="button button-ghost platform-button"
+                href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases/latest/download/J-Codes-darwin-arm64.zip"
+                target="_blank"
+                rel="noreferrer"
+                >Download .zip</a
+              >
+            </article>
+
+            <article class="platform-card reveal">
+              <span class="platform-icon" aria-hidden="true">🪟</span>
+              <h3>Windows</h3>
+              <p class="platform-meta">64-bit (x64) &middot; Setup installer</p>
+              <a
+                class="button button-ghost platform-button"
+                href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases/latest/download/J-Codes-UserSetup-x64.exe"
+                target="_blank"
+                rel="noreferrer"
+                >Download .exe</a
+              >
+            </article>
+
+            <article class="platform-card reveal">
+              <span class="platform-icon" aria-hidden="true">🐧</span>
+              <h3>Linux</h3>
+              <p class="platform-meta">Debian / Ubuntu (x64) &middot; .deb package</p>
+              <a
+                class="button button-ghost platform-button"
+                href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases/latest/download/j-codes_amd64.deb"
+                target="_blank"
+                rel="noreferrer"
+                >Download .deb</a
+              >
+            </article>
+          </div>
+
+          <p class="platforms-footnote">
+            Or view all assets on the
+            <a
+              href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub Releases page</a
+            >.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <p class="section-eyebrow center">FAQ</p>
+          <h2 class="section-title center">Common questions</h2>
+
+          <div class="faq-list reveal">
+            <details class="faq-item" open>
+              <summary>Is J Code's free and open source?</summary>
+              <p>
+                Yes. J Code's is licensed under the MIT License and built on the
+                open-source VS Code and Void projects. Source and releases are on
+                GitHub.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Which AI models can I use?</summary>
+              <p>
+                J Code's supports Anthropic Claude, Google Gemini, OpenAI (GPT-4o, o1,
+                o3), DeepSeek, Groq, and local models via Ollama. Configure providers
+                and API keys from the Settings pane (Cmd/Ctrl + ,).
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>macOS says the app "is damaged" or can't be checked &mdash; what do I do?</summary>
+              <p>
+                This is macOS Gatekeeper. Open Terminal and run
+                <code>xattr -cr "/Applications/J code's.app"</code>, or right-click the
+                app in Finder and choose Open.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Will my existing VS Code extensions and settings work?</summary>
+              <p>
+                Yes. J Code's is built on VS Code 1.99, so keybindings, settings,
+                syntax highlighting, and extensions carry over.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container cta-shell reveal">
+          <h2 class="section-title center">Ready to code with J Code's?</h2>
+          <p class="section-copy center">
+            Download the latest release for your platform and start building with
+            AI-native workflows today.
+          </p>
+          <div class="hero-actions center">
+            <a
+              href="https://github.com/jagantripuragiri/Jcodes-AI-Ide/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+              class="button button-primary button-lg"
+            >
+              Download Latest
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
       </section>
@@ -148,7 +370,17 @@
       <div class="container footer-inner">
         <div>
           <a href="#top" class="brand footer-brand">
-            <span class="brand-logo brand-logo-fallback" aria-hidden="true">J_</span>
+            <span class="brand-logo brand-logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M64 16 V57 C64 72.9 51.7 84 38 84 C28.6 84 20.8 79.3 15 71.5"
+                  stroke="currentColor"
+                  stroke-width="18"
+                  stroke-linecap="round"
+                />
+                <rect x="54" y="76" width="28" height="12" rx="2" fill="currentColor" />
+              </svg>
+            </span>
             <span class="brand-name">J Code's</span>
           </a>
           <p>The next-generation AI-first IDE built for developers.</p>
@@ -178,6 +410,12 @@
             target="_blank"
             rel="noreferrer"
             >Linux</a
+          >
+          <a
+            href="https://github.com/jagantripuragiri/Jcodes-AI-Ide"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
           >
         </div>
       </div>
