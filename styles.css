@@ -149,6 +149,17 @@ code {
   display: block;
 }
 
+.brand-logo-img {
+  background: #fff;
+}
+
+.brand-logo-img img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
 .brand-logo-fallback {
   font-weight: 800;
 }
@@ -853,9 +864,9 @@ code {
   }
 
   .hero-actions {
-    margin-top: 24px;
+    margin-top: 20px;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 8px;
   }
 
   .hero-actions.center {
@@ -864,24 +875,38 @@ code {
 
   .button,
   .button-lg {
-    min-height: 42px;
-    padding: 11px 18px;
-    font-size: 0.92rem;
+    min-height: 40px;
+    padding: 9px 16px;
+    font-size: 0.88rem;
   }
 
   .proof-row {
-    margin-top: 26px;
+    margin-top: 18px;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 6px;
   }
 
   .proof-row li {
-    padding: 8px 12px;
-    font-size: 0.82rem;
+    padding: 6px 10px;
+    font-size: 0.76rem;
   }
 
   .minimal-panel {
-    margin-top: 36px;
+    margin-top: 24px;
+    border-radius: var(--radius);
+  }
+
+  .minimal-panel-top {
+    padding: 10px 14px;
+  }
+
+  .minimal-panel-body {
+    padding: 12px 14px 16px;
+  }
+
+  .terminal-line {
+    padding: 5px 0;
+    font-size: 0.82rem;
   }
 
   .info-line {
@@ -910,12 +935,11 @@ code {
 
   .button,
   .button-lg {
-    min-height: 40px;
-    padding: 10px 16px;
-    font-size: 0.88rem;
+    min-height: 38px;
+    padding: 8px 14px;
+    font-size: 0.84rem;
   }
 
-  .hero-actions .button,
   .cta-shell .button {
     flex: 1 1 auto;
   }
@@ -926,23 +950,31 @@ code {
   }
 
   .hero-copy {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 
   .proof-row {
     flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .proof-row li {
+    padding: 5px 9px;
+    font-size: 0.72rem;
   }
 
   .minimal-panel-top {
-    padding: 13px 15px;
+    padding: 9px 12px;
   }
 
   .minimal-panel-body {
-    padding: 15px 16px 18px;
+    padding: 11px 12px 14px;
   }
 
   .terminal-line {
-    font-size: 0.82rem;
+    padding: 4px 0;
+    font-size: 0.78rem;
   }
 
   .info-line {
