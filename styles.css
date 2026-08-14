@@ -137,13 +137,19 @@ code {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.brand-logo-fallback {
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)), var(--secondary);
   color: var(--text);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.brand-logo svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.brand-logo-fallback {
   font-weight: 800;
 }
 
@@ -569,8 +575,22 @@ code {
   border-radius: 50%;
   background: var(--surface);
   border: 1px solid var(--border);
-  font-size: 1.6rem;
+  color: var(--text);
   margin-bottom: 18px;
+  transition: transform var(--transition-base), border-color var(--transition-base), background var(--transition-base);
+}
+
+.platform-icon svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+  fill: currentColor;
+}
+
+.platform-card:hover .platform-icon {
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
 }
 
 .platform-card h3 {
@@ -754,7 +774,6 @@ code {
     -webkit-backdrop-filter: none;
   }
 
-  .navbar,
   .footer-inner {
     flex-direction: column;
     align-items: stretch;
@@ -762,32 +781,50 @@ code {
 
   .navbar {
     min-height: auto;
-    justify-content: center;
+    justify-content: space-between;
     gap: 12px;
-    padding: 12px 0;
+    padding: 14px 0;
   }
 
   .brand {
-    gap: 12px;
+    gap: 10px;
   }
 
   .brand-logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
   }
 
   .brand-name {
-    font-size: 1.08rem;
+    font-size: 0.98rem;
   }
 
   .nav-links {
     display: none;
   }
 
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-actions .button-ghost {
+    display: none;
+  }
+
+  .nav-actions .button {
+    min-height: 38px;
+    padding: 9px 16px;
+    font-size: 0.88rem;
+  }
+
   .hero {
     min-height: auto;
-    padding: 44px 0 72px;
+    padding: 32px 0 64px;
+  }
+
+  .hero-shell {
+    text-align: left;
   }
 
   .hero-badge {
@@ -802,42 +839,49 @@ code {
   }
 
   .hero h1 {
-    max-width: 14ch;
-    font-size: clamp(2.35rem, 8vw, 3rem);
-    line-height: 0.98;
+    max-width: 15ch;
+    margin-inline: 0;
+    font-size: clamp(2.1rem, 8vw, 2.75rem);
+    line-height: 1.08;
   }
 
   .hero-copy {
-    max-width: 34ch;
-    margin-top: 18px;
+    max-width: 40ch;
+    margin: 16px 0 0;
     font-size: 0.96rem;
-    line-height: 1.65;
+    line-height: 1.6;
   }
 
   .hero-actions {
-    margin-top: 26px;
+    margin-top: 24px;
+    justify-content: flex-start;
     gap: 10px;
+  }
+
+  .hero-actions.center {
+    justify-content: center;
   }
 
   .button,
   .button-lg {
     min-height: 42px;
-    padding: 11px 16px;
-    font-size: 0.95rem;
+    padding: 11px 18px;
+    font-size: 0.92rem;
   }
 
   .proof-row {
-    margin-top: 28px;
-    gap: 10px;
+    margin-top: 26px;
+    justify-content: flex-start;
+    gap: 8px;
   }
 
   .proof-row li {
-    padding: 9px 12px;
-    font-size: 0.88rem;
+    padding: 8px 12px;
+    font-size: 0.82rem;
   }
 
   .minimal-panel {
-    margin-top: 40px;
+    margin-top: 36px;
   }
 
   .info-line {
@@ -866,28 +910,27 @@ code {
 
   .button,
   .button-lg {
-    width: 100%;
     min-height: 40px;
-    padding: 10px 14px;
-    font-size: 0.92rem;
+    padding: 10px 16px;
+    font-size: 0.88rem;
+  }
+
+  .hero-actions .button,
+  .cta-shell .button {
+    flex: 1 1 auto;
   }
 
   .hero h1 {
-    font-size: clamp(2.1rem, 8.5vw, 2.7rem);
+    font-size: clamp(1.9rem, 8.5vw, 2.5rem);
     letter-spacing: -0.025em;
   }
 
   .hero-copy {
-    font-size: 0.93rem;
+    font-size: 0.92rem;
   }
 
   .proof-row {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .proof-row li {
-    text-align: center;
+    flex-wrap: wrap;
   }
 
   .minimal-panel-top {
