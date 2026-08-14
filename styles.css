@@ -202,6 +202,8 @@ code {
   padding: 11px 18px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
+  line-height: 1;
+  box-sizing: border-box;
   transition:
     transform var(--transition-fast),
     border-color var(--transition-fast),
@@ -245,6 +247,12 @@ code {
 .button-lg {
   min-height: 48px;
   padding: 13px 22px;
+}
+
+.button span {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .hero {
@@ -302,6 +310,7 @@ code {
 .hero-actions {
   margin-top: 34px;
   display: flex;
+  align-items: stretch;
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
