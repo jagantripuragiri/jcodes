@@ -233,6 +233,16 @@ code {
   box-shadow: 0 18px 38px rgba(255, 255, 255, 0.1);
 }
 
+.nav-download {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.nav-download:hover,
+.nav-download:focus-visible {
+  box-shadow: none;
+}
+
 .button-ghost {
   background: var(--surface);
   color: var(--text);
