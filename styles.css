@@ -72,18 +72,20 @@ code {
 }
 
 .skip-link {
-  position: absolute;
-  top: -44px;
+  position: fixed;
+  top: 14px;
   left: 16px;
   background: #ffffff;
   color: #0a0a0a;
   padding: 10px 14px;
   border-radius: 10px;
   z-index: 100;
+  transform: translateY(-140%);
+  transition: transform var(--transition-fast);
 }
 
 .skip-link:focus {
-  top: 14px;
+  transform: translateY(0);
 }
 
 .container {
