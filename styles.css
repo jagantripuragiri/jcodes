@@ -401,6 +401,18 @@ code {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.panel-dots .dot-red {
+  background: #ff5f57;
+}
+
+.panel-dots .dot-yellow {
+  background: #febc2e;
+}
+
+.panel-dots .dot-green {
+  background: #28c840;
+}
+
 .mono {
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
